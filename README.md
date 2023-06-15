@@ -33,7 +33,9 @@ The `run.sh` script also shows how to authenticate *after* connecting using `db.
 ## Nifi
 
 Use URL such as:
+```
 mongodb://mongo:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=$external&authMechanism=MONGODB-X509&appName=foo
 mongodb://mongo:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=%24external&authMechanism=MONGODB-X509&appName=foo
+```
 
 and ensure there's an SSLContext setup for the PutMongo processor.
